@@ -1,0 +1,3 @@
+permalink: posts/:categories/:title/index.html
+exclude: README.md
+destination: ../httpdocs/news

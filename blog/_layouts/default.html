@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Saffire Language</title>
+    <link href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css">
+    <link href="/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/scripts/smooth.pack.js"></script>
+</head>
+
+<body>
+
+    <h1>Saffire news</h1>
+
+    <section id="news">
+
+    <ul class="posts">
+      {% for post in site.posts %}
+        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="/news/{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+
+        </section>
+
+    </body>
+</html>

@@ -1,0 +1,46 @@
+---
+layout: news
+---
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Saffire Language</title>
+    <link href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" type="text/css">
+    <link href="/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/scripts/smooth.pack.js"></script>
+</head>
+
+<body>
+<section id="news">
+
+    <h1>{{page.title}}</h1>
+
+    {{ content }}
+
+<div style='margin: 3em'>
+    <span class='st_facebook_hcount' title='Facebook'></span>
+    <span class='st_twitter_hcount' title='Tweet'></span>
+    <span class='st_linkedin_hcount' title='LinkedIn'></span>
+    <span class='st_googleplus_hcount' title='Google +'></span>
+    <span class='st_email_hcount' title='Email'></span>
+    <br>
+    <br>
+    <hr>
+    <div style='float:right'>
+        <address>News written by
+        {% if page.author_email %}
+            <a href="mailto://{{ page.author_email }}">{{ page.author }}</a>.
+        {% else %}
+            {{ page.author }}.
+        {% endif %}
+        </address>
+    </div>
+    <br>
+</div>
+
+    </section>
+
+</body>
+</html>
+
